@@ -2867,7 +2867,7 @@ img.iconsmall {
 }
 .course-content .single-section .section-navigation .title {
   font-weight: bold;
-  font-size: 108%;
+  font-size: 60%;
   clear: both;
 }
 .course-content .single-section .section-navigation .mdl-left {
@@ -14834,7 +14834,7 @@ p {
     padding-right: 10px;
   }
 }
-@media (min-width: 980px) {
+@media (min-width: 979px + 1) {
   .nav-collapse.collapse {
     height: auto !important;
     overflow: visible !important;
