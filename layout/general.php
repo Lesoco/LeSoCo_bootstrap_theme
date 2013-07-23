@@ -65,7 +65,7 @@ echo $OUTPUT->doctype() ?>
 <header role="banner" class="navbar navbar-fixed-top">
     <nav role="navigation" class="navbar-inner">
         <div class="container-fluid">
-           <a class="brand" href="<?php echo $CFG->wwwroot;?>"><?php echo $SITE->shortname; ?></a> 
+           <img src="<?php echo $OUTPUT->pix_url('logo4', 'theme'); ?>" alt="" height="50" width="90" style="float:left; margin-top:7px; margin-right:10px"/ /> 
             <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
