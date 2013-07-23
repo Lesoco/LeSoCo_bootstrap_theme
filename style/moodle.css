@@ -9768,7 +9768,7 @@ input[type="submit"].btn.btn-mini {
 }
 .navbar {
   overflow: visible;
-  margin-bottom: 0 !important;
+  margin-bottom: 10px !important;
   *position: relative;
   *z-index: 2;
 }
@@ -12287,7 +12287,7 @@ select {
 }
 .breadcrumb-button {
   float: right;
-  margin-top: 3px;
+  margin-top: 0px;
 }
 .dir-rtl .navbar .brand {
   float: right;
