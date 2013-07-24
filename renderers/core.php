@@ -101,7 +101,20 @@ class theme_bootstrap_core_renderer extends core_renderer {
                 new moodle_url($this->page->url, array('lang' => $langtype)), $langname);    
             }
         }
-        
+
+ // Add My Courses to the menu
+ if (isloggedin() && !isguestuser() && $mycourses = enrol_get_my_courses(NULL, 'visible DESC, fullname ASC')) { 
+ $mycoursesmenu = $menu->add(get_string('mycourses'), new moodle_url('#'), get_string('mycourses'), 8000);
+
+ // lower numbers = higher priority e.g. move this item to the left on the Custom Menu
+ foreach ($mycourses as $mycourse) {
+ $mycoursesmenu->add($mycourse->fullname, new moodle_url('/course/view.php', array('id' => $mycourse->id)), $mycourse->fullname);
+ }
+ }
+
+
+
+
         $content = '<ul class="nav">';
         foreach ($menu->get_children() as $item) {
             $content .= $this->render_custom_menu_item($item, 1);

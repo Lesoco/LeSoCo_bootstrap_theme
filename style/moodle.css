@@ -13669,9 +13669,10 @@ p {
   font-weight: bold;
   padding: 0px;
 }
+/* change to course list title  1.65em */
 .block .header .title h2:before {
   font-family: FontAwesome;
-  font-size: 1.65em;
+  font-size: 1.00em;
   margin-right: .3em;
   color: [[setting:themecolor]];
   content: "\f0c9";
