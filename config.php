@@ -37,12 +37,12 @@ $THEME->layouts = array(
     'base' => array(
         'file' => 'general.php',
         'regions' => array('side-pre', 'side-post'),
-        'defaultregion' => 'side-post',
+        'defaultregion' => 'side-pre',
     ),
     'standard' => array(
         'file' => 'general.php',
         'regions' => array('side-pre', 'side-post'),
-        'defaultregion' => 'side-post',
+        'defaultregion' => 'side-pre',
     ),
     'course' => array(
         'file' => 'general.php',
@@ -62,12 +62,12 @@ $THEME->layouts = array(
     'frontpage' => array(
         'file' => 'general.php',
         'regions' => array('side-pre'),
-        'defaultregion' => 'side-post',
+        'defaultregion' => 'side-pre',
          'options' => array('nonavbar'=>true),
     ),
     'admin' => array(
         'file' => 'general.php',
-        'regions' => array('side-pre'),
+        'regions' => array('side-pre', 'side-post'),
         'defaultregion' => 'side-post',
     ),
     'mydashboard' => array(
