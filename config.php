@@ -47,12 +47,12 @@ $THEME->layouts = array(
     'course' => array(
         'file' => 'general.php',
         'regions' => array('side-pre', 'side-post'),
-        'defaultregion' => 'side-pre'
+        'defaultregion' => 'side-post'
     ),
     'coursecategory' => array(
         'file' => 'general.php',
         'regions' => array('side-pre', 'side-post'),
-        'defaultregion' => 'side-pre',
+        'defaultregion' => 'side-post',
     ),
     'incourse' => array(
         'file' => 'general.php',
